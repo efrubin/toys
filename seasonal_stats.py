@@ -2,9 +2,10 @@
 
 import json
 import urllib2
+import jsonpickle
 
 
-class PlayerSeasonals():
+class PlayerSeasonals(object):
 
     def __init__(self, name):
 
@@ -73,4 +74,4 @@ class PlayerSeasonals():
     def __repr__(self):
         return 'Seasonal Hiscores of {}'.format(self.name)
 
-
+if __name__ == '__main__':
